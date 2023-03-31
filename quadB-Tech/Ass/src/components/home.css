@@ -1,0 +1,67 @@
+* {
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.main {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-gap: 15px;
+  justify-content: center;
+  text-align: center;
+}
+.cont {
+  box-shadow: #0000003d 0px 3px 8px;
+  border-radius: 10px;
+}
+.single {
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 330px);
+  grid-gap: 15px;
+  justify-content: center;
+
+  border-radius: 10px;
+  padding: 10px;
+  align-items: center;
+}
+@media screen and (min-width: 1024px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(4, 300px);
+  }
+}
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+@media screen and (max-width: 766px) {
+  .single,
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+  }
+}
+.ticket {
+  margin: auto;
+  width: 300px;
+  font-size: 15px;
+  line-height: 27px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
